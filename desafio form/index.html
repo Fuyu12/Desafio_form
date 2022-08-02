@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Formulario</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Prencha o formulário abaixo para agendar sua mentoria</p>
+        </header>
+
+        <form>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                <legend>Informações pessoais</legend>
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="name-info">Nome</label>
+                        <input type="text" id="name-info">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="sobrenome-info">Sobrenome</label>
+                        <input type="text" id="sobrenome-info">
+                    </div>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="email-info">Email <span>(digite um email valido)</span></label>
+                    <input type="email" id="email-info">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="password-info">Senha <span>(minimo 8 caracteres)</span></label>
+                    <input type="password" id="password-info">
+                </div>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                <legend>Informações do Mentor</legend>
+
+                <div class="input-wrapper">
+                    <label for="name-mentorship">Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+                    <input type="text" id="name-mentorship"/>
+                </div>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <div class="fieldset-wrapper">
+                <legend>Seus horarios disponiveis</legend>
+                <legend class="legend-col-3">primeira mentoria</legend>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="mentorship-data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="mentorship-data">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-hour">Das</label>
+                        <input type="time" id="mentorship-hour">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-hour">Até</label>
+                        <input type="time" id="mentorship-hour">
+                    </div> 
+                </div>
+
+                <legend class="legend-col-3">Segunda mentoria</legend>
+                <div class="col-3-2">
+                    <div class="input-wrapper">
+                        <label for="mentorship-data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="mentorship-data">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-hour">Das</label>
+                        <input type="time" id="mentorship-hour">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-hour">Até</label>
+                        <input type="time" id="mentorship-hour">
+                    </div> 
+                </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="botao-save">
+            <input type="submit" value="Salvar">
+        </div>
+    </div>
+</body>
+</html>
